@@ -6,10 +6,11 @@
         xmlns:local="clr-namespace:OperationOnData"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="Postbtn" ContextMenuClosing="Button_Click">
         <Button x:Name="getmodels" Content="Get All Models" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Click="getmodels_Click"/>
         <ListBox x:Name="Data" d:ItemsSource="{d:SampleData ItemCount=0}" Margin="215,0,0,0"/>
-        <Button x:Name="GetModelId" Content="Get Selecte Model" HorizontalAlignment="Left" Margin="73,103,0,0" VerticalAlignment="Top" Click="GetModelId_Click"/>
+        <Button x:Name="GetModelId" Content="Get Selecte Model" HorizontalAlignment="Left" Margin="21,35,0,0" VerticalAlignment="Top" Click="GetModelId_Click"/>
+        <Button Content="Add new position" HorizontalAlignment="Left" Margin="22,60,0,0" VerticalAlignment="Top" Click="Button_Click"/>
 
     </Grid>
 </Window>
